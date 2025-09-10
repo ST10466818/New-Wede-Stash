@@ -8,5 +8,142 @@ h1 {
   font-weight: 400;
   font-style: normal;
 } 
+body {
+      font-family: 'Poppins', sans-serif;
+      margin: 20px;
+      color: #333;
+      background-color: #ffcce0;
+    } 
+
+    h1 {
+      font-family:"Anton", sans-serif;
+      text-align: center;
+      font-size: 2.5em;
+      color: #ff5fa2;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #ffcce0;
+    }
+
+    /* Overflow  */
+    .overflow-box {
+      width: 300px;
+      height: 150px;
+      border: 3px solid #ff5fa2;
+      border-radius: 12px;
+      padding: 10px;
+      margin: 0 auto 30px;
+      overflow: auto;
+      background: white;
+    }
+
+    .overflow-demo {
+    width: 300px;
+    height: 120px;
+    border: 2px solid #ccc;
+    overflow: auto;
+    margin-bottom: 20px;
+    margin-left: 42%;
+    }
+
+    .overflow-box p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    /* Z-index stacking */
+    .stack-container {
+      position: relative;
+      width: 320px;
+      height: 220px;
+      margin: 0 auto;
+    }
+
+    .box {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border: 3px solid white;
+      border-radius: 16px;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 5px 15px #00000033;
+    }
+
+    .pink {
+      background:#ff69b4b3;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    .blue {
+      background:#1e90ffb3;
+      top: 40px;
+      left: 60px;
+      z-index: 2;
+    }
+
+    .gold {
+      background:#ffd700b3;
+      top: 60px;
+      left: 100px;
+      z-index: 3;
+    }
+
+    /* Opacity */
+    .fade-demo {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .fade-demo img {
+      width: 200px;
+      opacity: 0.5;
+      border: 5px solid #ff5fa2;
+      border-radius: 20px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .fade-demo img:hover {
+      opacity: 1;
+    }
+
+    /* Visibility toggle */
+    .drama-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .drama-box {
+      margin: 20px auto;
+      width: 80%;
+      max-width: 400px;
+      padding: 15px;
+      border: 2px dashed #ff5fa2;
+      border-radius: 15px;
+      background: #fff0f6;
+      font-style: italic;
+      visibility: visible; /* toggled by JS */
+      transition: visibility 0.3s ease;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #ff5fa2;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e04f8d;
+    }
+
+    
 
 

@@ -5,12 +5,69 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
 <style>
 h1 {font-family:'Anton', sans-serif;}
 </style>
 </head>
-<body>
+<body class="body">
     <h1>New Ting</h1>
-    
+
+
+<div class="overflow-demo">
+    <p>
+      The villa is FULL of drama right now!  
+      Will they stay loyal, or will someone’s head turn?  
+      Keep scrolling to read more gossip…  
+      This box has overflow, so if the text is too long, you’ll need to scroll inside it.  
+      Remember it's Love Island not Friendship Island.
+    </p>
+</div>
+
+  <!-- Z-Index -->
+  <div class="stack-container">
+    <div class="box pink">Bombshells</div>
+    <div class="box blue">OG Islanders</div>
+    <div class="box gold">Coupled Up</div>
+  </div>
+
+  <!-- Opacity -->
+  <div class="fade-demo">
+    <h2>Shakira and Harry coupling up towards the end of the season despite her mother's thoughts👀</h2>
+    <img src="shakira-deadline-meet-puts-graft-1001906452_251355.webp" alt="Shak and Harry">
+    <p>Hover to see it all unfold…</p>
+  </div>
+
+
+  <!-- Visibility Toggle -->
+  <div class="drama-section">
+    <button onclick="toggleDrama()">Reveal Drama</button>
+    <div class="drama-box" id="dramaBox">
+      "Honestly babe, Don't put all your eggs in one basket” 
+    </div>
+  </div>
+
+<form name="sign in" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname" placeholder="Enter your name">
+<input type="text" email="email" placeholder="Enter your email">
+<input type="submit" value="Submit">
+</form>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
+}
+</script>
+   
+
 </body>
 
